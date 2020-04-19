@@ -1,0 +1,15 @@
+module.exports = {
+  mongodb: {
+    database: "$database",
+    domain: "$domain",
+    options: {
+      useCreateIndex: true,
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+      config: { autoIndex: true },
+      user: "$account",
+      pass: "$password",
+      readPreference: "secondaryPreferred"
+    }
+  }
+};
